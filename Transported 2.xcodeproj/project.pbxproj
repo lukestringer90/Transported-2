@@ -18,6 +18,7 @@
 		A3B9B4671D3BE0330027AB8E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B9B4661D3BE0330027AB8E /* MapViewController.swift */; };
 		A3B9B4691D3BE38A0027AB8E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B9B4681D3BE38A0027AB8E /* CoreLocation.framework */; };
 		A3B9B46B1D3BEEE30027AB8E /* sheff-city-centre.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A3B9B46A1D3BEEE30027AB8E /* sheff-city-centre.gpx */; };
+		A3B9B46D1D3BEF480027AB8E /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B9B46C1D3BEF480027AB8E /* Stop.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		A3B9B4661D3BE0330027AB8E /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A3B9B4681D3BE38A0027AB8E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A3B9B46A1D3BEEE30027AB8E /* sheff-city-centre.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "sheff-city-centre.gpx"; sourceTree = "<group>"; };
+		A3B9B46C1D3BEF480027AB8E /* Stop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				A3B9B4411D3BB4E70027AB8E /* Info.plist */,
 				A3B9B46A1D3BEEE30027AB8E /* sheff-city-centre.gpx */,
 				A3B9B4391D3BB4E70027AB8E /* Transported_2.xcdatamodeld */,
+				A3B9B46C1D3BEF480027AB8E /* Stop.swift */,
 			);
 			path = "Transported 2";
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				A3B9B4331D3BB4E70027AB8E /* AppDelegate.swift in Sources */,
 				A3B9B4671D3BE0330027AB8E /* MapViewController.swift in Sources */,
 				A3B9B43B1D3BB4E70027AB8E /* Transported_2.xcdatamodeld in Sources */,
+				A3B9B46D1D3BEF480027AB8E /* Stop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
