@@ -15,7 +15,14 @@ enum StopType {
 	case Tram
 }
 
-struct Stop {
+protocol StopModel {
+	var location: CLLocation { get }
+	var type: StopType { get }
+	var title: String { get }
+	var subtitle: String? { get }
+}
+
+struct Stop: StopModel {
 	let location: CLLocation
 	let type: StopType
 	let title: String
