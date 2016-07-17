@@ -1,26 +1,61 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11163.2" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dz1-R0-Aw9">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11133"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="tTw-bO-2oT">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dz1-R0-Aw9" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Oa0-a6-kHV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="lyH-ek-H5j" kind="relationship" relationship="rootViewController" id="QWq-3d-liZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aH4-kb-ofN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="999" y="1632"/>
+        </scene>
+        <!--Transported-->
+        <scene sceneID="QD5-Du-Kpz">
+            <objects>
+                <viewController id="lyH-ek-H5j" customClass="MapViewController" customModule="Transported_2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="XND-iC-E7n"/>
+                        <viewControllerLayoutGuide type="bottom" id="EbF-49-EbJ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="a0d-3h-HzA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HsQ-JH-WTB">
+                                <connections>
+                                    <outlet property="delegate" destination="lyH-ek-H5j" id="JcZ-4i-ECG"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HsQ-JH-WTB" firstAttribute="leading" secondItem="a0d-3h-HzA" secondAttribute="leading" id="L7L-56-kwA"/>
+                            <constraint firstItem="HsQ-JH-WTB" firstAttribute="top" secondItem="XND-iC-E7n" secondAttribute="bottom" constant="-64" id="TNd-FV-7CL"/>
+                            <constraint firstAttribute="trailing" secondItem="HsQ-JH-WTB" secondAttribute="trailing" id="e0w-kM-ZBq"/>
+                            <constraint firstItem="EbF-49-EbJ" firstAttribute="top" secondItem="HsQ-JH-WTB" secondAttribute="bottom" id="wDb-jr-1D6"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Transported" id="PUQ-eg-RCI"/>
+                    <connections>
+                        <outlet property="mapView" destination="HsQ-JH-WTB" id="HNN-JF-7Pa"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NLH-Nn-rLk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1918" y="1631"/>
         </scene>
     </scenes>
 </document>
